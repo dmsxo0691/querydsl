@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/header :: header">
+</head>
+<body>
+
+<div th:replace="layout/bodyHeader :: bodyHeader"></div>
+<button onclick="saveReq()">글쓰기</button>
+
+</body>
+<script>
+  const saveReq = () => {
+    location.href = "/board/save";
+  }
+</script>
+</html>
